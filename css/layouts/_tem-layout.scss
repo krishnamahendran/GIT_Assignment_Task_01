@@ -1,0 +1,26 @@
+.content-wraper {
+	max-width: $content-wraper-width;
+	margin: 0 auto;
+	padding: 0 1em;
+}
+
+.block-content {
+    display: flex;
+    flex-wrap: wrap;
+	margin-bottom:7em;
+}
+.block-content__lift {
+    flex: 1 14%;
+	margin-right: 2em;
+}
+.block-content__right {
+    flex: 1 80%;
+}
+
+ul {
+	margin:0;
+	padding:0;
+}
+ul li {
+	list-style:none;
+}

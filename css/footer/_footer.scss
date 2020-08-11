@@ -1,0 +1,10 @@
+.site-footer {
+	background-color:$footer-background;
+	text-align:center;
+	padding:3em 0;
+	margin-top:1em;
+	color:$header-fist-tag-color;
+	& p{
+		opacity:0.8;
+	}
+}

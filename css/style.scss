@@ -1,0 +1,62 @@
+$content-wraper-width:1280px;
+$background-color: #ffffff;
+$default-border-color: #ffffff;
+$border-color: #c2c2c2;
+$anchor-primary-color: #1b1b1b;
+$anchor-primary-hover-color: #005c3e;
+$transition-effect:all 0.4s;
+$header-fist-tag-color:#ffffff;
+$rating-defult-color: #ababab;
+$rating-checked-color: #232323;
+$footer-background: #001711;
+
+
+
+
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+# Fonts
+# Header
+	# Navigation
+		## Links
+		## Menus
+# Layout
+	## Tempaltee Layout
+	## Sidebar Layout
+	## Product Layout
+#Footer	
+# Forms
+# Responsive
+	
+--------------------------------------------------------------*/
+
+
+/******************* Fonts *************************/
+@import 'fonts/fonts';
+
+
+/******************* Header *************************/
+@import 'header/header-top-nav';
+@import 'header/header-logo';
+@import 'header/header-nav';
+
+/******************* Layout *************************/
+@import 'layouts/tem-layout';
+@import 'layouts/product-layout';
+@import 'layouts/sidebar-layout';
+
+
+/******************* Forms *************************/
+@import 'form-elements/form';
+
+
+/******************* Responsive *************************/
+@import 'responsive/responsive';
+
+/******************* Footer *************************/
+@import 'footer/footer';
+
+
+
+

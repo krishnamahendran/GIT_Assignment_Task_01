@@ -1,0 +1,223 @@
+div#product {
+	display: flex;
+	flex-wrap: wrap;
+}
+span.fa.fa-star{
+	color:$rating-defult-color;
+	font-size: 12px;
+}
+.product.product-list {
+	flex: 0 32.37%;
+	border: 1px solid $default-border-color;
+	margin: 0.5em 0.5em 0.5em 0em;
+	padding: 0;
+	text-align: center;
+	min-height: 320px;
+	position:relative;
+	background-color: $background-color;
+	&.content-wraper__waves {
+		background-image: url(../images/LM_2019_FY20_Loyalist_MPP2_Tout_Launch_Headline.jpg);
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
+		text-align: center;	
+	}
+	&.content-wraper__waves:hover{
+		border: 1px solid $default-border-color;
+	}
+	&.content-wraper__waves p {
+		margin-top: 14em;
+		color: $header-fist-tag-color;
+		line-height: 1.3em;
+		padding:0 3em;
+		margin-bottom: 2em;
+	}
+	&.content-wraper__waves a {
+		padding: 0.5em 1.5em;
+		text-decoration: none;
+		background-color:$background-color;
+		color:$anchor-primary-color;
+		transition:$transition-effect;
+		margin-top:1.5em;
+		border-radius:4px;
+		&:hover {
+			color:$anchor-primary-hover-color;
+			transition:$transition-effect;
+		}
+	}
+	&:hover {
+		border: 1px solid $border-color;
+		border-bottom:0;
+		.product.cart__cta {
+			transition: $transition-effect;
+			visibility: visible;
+			height: auto;
+			opacity: 1;
+			position: absolute;
+			width: 100%;
+			z-index: 11;
+			bottom: -4.6em;
+			border: 1px solid $border-color;
+			margin-left: -0.05em;
+			border-top: 0;
+			background-color: $background-color;
+		}
+	}
+	& img {
+		margin: 0 auto;
+		width: 100%;
+		height: 250px;
+		object-fit: cover;
+		object-position: 50% 50%;
+	}
+}
+.product-starrating-1 {
+	span.fa.fa-star {
+		&:nth-child(1) {
+			color: $rating-checked-color;
+		}
+	}
+}
+.product-starrating-2 {
+	span.fa.fa-star {
+		&:nth-child(1) {
+			color: $rating-checked-color;
+		}
+		&:nth-child(2) {
+			color: $rating-checked-color;
+		}
+	}
+}
+.product-starrating-3 {
+	span.fa.fa-star {
+		&:nth-child(1) {
+			color: $rating-checked-color;
+		}
+		&:nth-child(2) {
+			color: $rating-checked-color;
+		}
+		&:nth-child(3) {
+			color: $rating-checked-color;
+		}
+	}
+}
+.product-starrating-4 {
+	span.fa.fa-star {
+		&:nth-child(1) {
+			color: $rating-checked-color;
+		}
+		&:nth-child(2) {
+			color: $rating-checked-color;
+		}
+		&:nth-child(3) {
+			color: $rating-checked-color;
+		}
+		&:nth-child(4) {
+			color: $rating-checked-color;
+		}
+	}
+}
+.product-starrating-5 {
+	span.fa.fa-star {
+		&:nth-child(1) {
+			color: $rating-checked-color;
+		}
+		&:nth-child(2) {
+			color: $rating-checked-color;
+		}
+		&:nth-child(3) {
+			color: $rating-checked-color;
+		}
+		&:nth-child(4) {
+			color: $rating-checked-color;
+		}
+		&:nth-child(5) {
+			color: $rating-checked-color;
+		}
+	}
+}
+.product.cart__cta {
+	transition: $transition-effect;
+	visibility: hidden;
+	height: 0;
+	opacity: 0;
+	a {
+		display: block;
+		margin: 0.8em 0;
+	}
+	a.cart_shopcta {
+		text-decoration: none;
+		background-color: #0e0e0e;
+		max-width: 38%;
+		margin: 0 auto;
+		padding: 0.8em 1.5em;
+		color: #fff;
+		border-radius: 4px;
+		font-size: 14px;
+		transition: $transition-effect;
+		&:hover {
+			text-decoration: none;
+			background-color: #1b5231;
+			transition: $transition-effect;
+		}
+	}
+	a.cart__wishlistcta {
+		font-size: 12px;
+		text-decoration: underline;
+		opacity: 0.5;
+	}
+	
+}
+.default-hide {
+	display: none;
+}
+.content-wraper__right-banner {
+	background-image: url(../images/Category_Touts_Bestsellers_1.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	text-align: center;
+	flex: 1 65%;
+    margin-right: 0.5em;
+	h1 {
+		color:$header-fist-tag-color;
+		font-family:$secondary-font-family;
+		font-weight:500;
+		font-size: 40px;
+		margin-bottom: 0;
+	}
+	p {
+		color:$header-fist-tag-color;
+		max-width:350px;
+		margin:1em auto;
+	}
+}
+.block-content__sort {
+    flex: 1 100%;
+    text-align: right;
+    margin: 2em 0;
+}
+.product-list--descrip p {
+    font-style: italic;
+    opacity: 0.8;
+    font-size: 14px;
+    margin: 0;
+	padding: 0 2em;
+    line-height: 1.3em;
+}
+.product-list--title {
+	margin-top: 2em;
+    margin-bottom: 0.8em;
+	& h2 {
+		margin: 0.2em 0;
+		line-height: 18px;
+		font-weight: 300;
+		font-size: 18px;
+		font-family:$secondary-font-family;
+	}
+}	
+
+.product-list--price p {
+    opacity: 0.8;
+    font-size: 14px;
+}
